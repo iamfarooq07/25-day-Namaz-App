@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>Namaz App</title>
+</head>
+
+<body
+    class="w-screen min-h-screen flex justify-center items-center bg-gradient-to-br from-green-200 via-blue-200 to-purple-200 p-4">
+
+    <div
+        class="container w-full max-w-4xl rounded-3xl bg-white/20 backdrop-blur-lg shadow-2xl p-4 sm:p-6 flex flex-col md:flex-row gap-6">
+
+        <div class="left w-full md:w-1/2 flex flex-col gap-6">
+            <form id="form" class="flex flex-col gap-4 w-full">
+                <input id="city" type="text" placeholder="Enter Your City"
+                    class="w-full p-4 bg-white/60 border border-gray-300 rounded-2xl text-base sm:text-lg"
+                    autocomplete="off">
+                <input id="country" type="text" placeholder="Enter Your Country"
+                    class="w-full p-4 bg-white/60 border border-gray-300 rounded-2xl text-base sm:text-lg"
+                    autocomplete="off">
+                <button id="btn"
+                    class="bg-green-600 hover:bg-green-700 transition rounded-2xl w-full text-lg sm:text-xl font-semibold p-4 text-white shadow-lg">
+                    Search Timings
+                </button>
+            </form>
+
+            <div class="text-center bg-white/60 rounded-2xl py-6 shadow-lg">
+                <h1 id="fixtime" class="text-3xl sm:text-4xl font-bold text-gray-800 tracking-wider">12:00</h1>
+                <h3 id="date" class="text-lg sm:text-xl mt-2 text-gray-700">05/10/2025</h3>
+            </div>
+        </div>
+
+        <div class="right w-full md:w-1/2 flex flex-col gap-4">
+            <div class="p-4 bg-white/70 rounded-2xl shadow-md hover:shadow-lg transition">
+                <div class="flex justify-between items-center">
+                    <h1 class="text-green-700 font-bold text-xl sm:text-2xl">Salat al-Fajr</h1>
+                    <i class="fa-solid fa-bell text-green-600"></i>
+                </div>
+                <p id="fajr" class="mt-2 text-gray-800 text-base sm:text-lg"><i
+                        class="mr-2 fa-solid fa-clock text-green-600"></i>12:00</p>
+            </div>
+            <div class="p-4 bg-white/70 rounded-2xl shadow-md hover:shadow-lg transition">
+                <div class="flex justify-between items-center">
+                    <h1 class="text-green-700 font-bold text-xl sm:text-2xl">Salat al-Zuhr</h1>
+                    <i class="fa-solid fa-bell text-green-600"></i>
+                </div>
+                <p id="zuhr" class="mt-2 text-gray-800 text-base sm:text-lg"><i
+                        class="mr-2 fa-solid fa-clock text-green-600"></i>12:00</p>
+            </div>
+            <div class="p-4 bg-white/70 rounded-2xl shadow-md hover:shadow-lg transition">
+                <div class="flex justify-between items-center">
+                    <h1 class="text-green-700 font-bold text-xl sm:text-2xl">Salat al-Asr</h1>
+                    <i class="fa-solid fa-bell text-green-600"></i>
+                </div>
+                <p id="asr" class="mt-2 text-gray-800 text-base sm:text-lg"><i
+                        class="mr-2 fa-solid fa-clock text-green-600"></i>12:00</p>
+            </div>
+            <div class="p-4 bg-white/70 rounded-2xl shadow-md hover:shadow-lg transition">
+                <div class="flex justify-between items-center">
+                    <h1 class="text-green-700 font-bold text-xl sm:text-2xl">Salat al-Maghrib</h1>
+                    <i class="fa-solid fa-bell text-green-600"></i>
+                </div>
+                <p id="maghrib" class="mt-2 text-gray-800 text-base sm:text-lg"><i
+                        class="mr-2 fa-solid fa-clock text-green-600"></i>12:00</p>
+            </div>
+            <div class="p-4 bg-white/70 rounded-2xl shadow-md hover:shadow-lg transition">
+                <div class="flex justify-between items-center">
+                    <h1 class="text-green-700 font-bold text-xl sm:text-2xl">Salat al-Isha</h1>
+                    <i class="fa-solid fa-bell text-green-600"></i>
+                </div>
+                <p id="isha" class="mt-2 text-gray-800 text-base sm:text-lg"><i
+                        class="mr-2 fa-solid fa-clock text-green-600"></i>12:00</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+
+
+</html>
