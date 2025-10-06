@@ -30,6 +30,9 @@ form.addEventListener("submit", (e) => {
     return;
   }
 
+  cityInp.value = "";
+  countryInp.value = "";
+
   fetch(
     `https://api.aladhan.com/v1/timingsByCity?city=${cityVal}&country=${countryVal}&method=1`
   )
